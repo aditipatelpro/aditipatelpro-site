@@ -8,43 +8,43 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen space-x-8  p-24">
+    <div className="flex flex-wrap h-screen w-screen bg-slate-100 justify-center items-center min-w-300 gap-4 p-12">
       <div>
         <Image
             src={profilePic}
-            width={150}
-            height={150}
+            width={200}
+            height={200}
             alt="My picture"
-            className='rounded-full m-2'
+            className='rounded-full'
           />
       </div>
-      <div className='flex flex-col space-y-10'>
-        <div className='flex items-center space-x-4'>
-        
-          <div className='flex flex-col space-y-4'>
-            <h1 className='text-5xl font-semibold'>Hi, I am Aditi Patel</h1>
-            <p className='text-l'>I am a Full Stack Engineer. I am an active open source contributor and I am in love with react !!!</p>
-          </div>
+
+      <div className='block space-y-6'>
+        <div className='flex flex-col  h-200 gap-2'>
+          <h1 className='text-4xl sm:text-5xl font-semibold'>Hi, I am Aditi Patel</h1>
+          <p className='text-l'>I am a Full Stack Engineer. I am an active open source contributor and I am in love with react !!!</p>
         </div>
+
         <div>
-          <p className='text-2xl'> Tech Stacks I love to work with</p>
-          <div className='flex space-x-4'>
-            <FaReact/>
-            <BiLogoTypescript/> 
-            <TbBrandNextjs/>
-            <BiLogoNodejs/>
-            <BiLogoVuejs/>
-            <BiLogoGraphql/>
-            <SiMui/>
-            <BiLogoPostgresql/>
+          <p className='text-3xl'> Tech Stacks I love to work with</p>
+          <div className='flex flex-wrap gap-4'>
+            <FaReact size={'25'}/>
+            <BiLogoTypescript size={'25'}/> 
+            <TbBrandNextjs size={'25'}/>
+            <BiLogoNodejs size={'25'}/>
+            <BiLogoVuejs size={'25'} />
+            <BiLogoGraphql size={'25'}/>
+            <SiMui size={'25'}/>
+            <BiLogoPostgresql size={'25'}/>
           </div>
         </div>
-        <div className='flex space-x-4'>
+
+        <div className='flex flex-wrap gap-4'>
             <Link href='https://www.linkedin.com/in/aditipatelpro/'>
-              <button className="bg-blue-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <button className="bg-blue-300 text-gray-800 font-semibold px-5 py-2.5 rounded inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-current w-4 h-4 mr-2" 
+                    className="fill-current w-4 h-3.5 mr-2" 
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     >
@@ -56,7 +56,7 @@ export default function Home() {
             </Link>
 
             <Link href='https://github.com/aditipatelpro'>
-              <button className="bg-blue-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <button className="bg-blue-300 text-gray-800 font-semibold px-5 py-2.5 rounded inline-flex items-center">
                   <svg 
                     className="fill-current w-4 h-4 mr-2" 
                     aria-hidden="true" 
@@ -70,7 +70,7 @@ export default function Home() {
             </Link>
 
           <a href="/resume.pdf" target='_blank'>
-            <button className="bg-blue-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <button className="bg-blue-300 text-gray-800 font-semibold px-5 py-2.5 rounded inline-flex items-center">
               <svg 
                   className="w-4 h-4 mr-2" 
                   aria-hidden="true" 
