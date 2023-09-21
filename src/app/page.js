@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import { BiLogoTypescript, BiLogoNodejs, BiLogoVuejs, BiLogoGraphql, BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMui } from "react-icons/si";
-import profilePic from '../../public/profile.png'
+import profilePic from '../../public/profile.PNG'
 import Link from 'next/link';
 
 export default function Home() {
